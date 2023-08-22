@@ -1,8 +1,8 @@
 import openai
 import json
 
-openai.api_key = "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"
 
+openai.api_key = os.getenv("OPENAI_API_KEY")
 text = input("Please enter the text to be translated: ")
 language = input("Please enter the language you want to translate to: ")
 
